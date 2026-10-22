@@ -3,16 +3,16 @@
     "step": {
       "user": {
         "title": "Tank Level Volume",
-        "description": "A percentage level reading is hard to act on for rainwater, heating oil, or other storage tanks. This integration converts a percent sensor and configured usable capacity into liters."
+        "description": "A percentage level reading is hard to act on for rainwater, heating oil, or other storage tanks. This integration converts a percent sensor and configured usable capacity into liters.",
+        "data": {
+          "level_entity": "Tank level sensor (%)",
+          "capacity_liters": "Usable tank capacity in liters"
+        }
       }
     },
     "abort": {
       "already_configured": "Deze sensorcombinatie is al ingesteld."
     },
-    "error": {},
-    "data": {
-      "level_entity": "Tank level sensor (%)",
-      "capacity_liters": "Usable tank capacity in liters"
-    }
+    "error": {}
   }
 }

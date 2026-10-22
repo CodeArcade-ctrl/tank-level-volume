@@ -1,0 +1,1 @@
+Turn a percentage level sensor into remaining and available volume for a tank of known capacity.

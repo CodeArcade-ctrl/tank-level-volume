@@ -5,7 +5,7 @@ from homeassistant.const import UnitOfTemperature, UnitOfTime, UnitOfVolume, Uni
 from homeassistant.helpers.update_coordinator import CoordinatorEntity
 from .const import DOMAIN
 
-DESCRIPTIONS = [("remaining", "Volume remaining", SensorDeviceClass.WATER, UnitOfVolume.LITERS, SensorStateClass.MEASUREMENT), ("empty", "Empty capacity", SensorDeviceClass.WATER, UnitOfVolume.LITERS, SensorStateClass.MEASUREMENT), ("level", "Tank level", None, PERCENTAGE, SensorStateClass.MEASUREMENT)]
+DESCRIPTIONS = [("remaining", "Volume remaining", SensorDeviceClass.VOLUME_STORAGE, UnitOfVolume.LITERS, SensorStateClass.MEASUREMENT), ("empty", "Empty capacity", SensorDeviceClass.VOLUME_STORAGE, UnitOfVolume.LITERS, SensorStateClass.MEASUREMENT), ("level", "Tank level", None, PERCENTAGE, SensorStateClass.MEASUREMENT)]
 
 async def async_setup_entry(hass, entry, async_add_entities):
     coordinator = hass.data[DOMAIN][entry.entry_id]
